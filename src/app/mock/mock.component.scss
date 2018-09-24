@@ -1,0 +1,59 @@
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+#response-card-header{
+
+}
+
+.dtcm-textarea{
+margin-top: 10px;
+margin-right:20px;
+margin-left : 10px;
+width : 300px;
+}
+
+.textarea.mat-input-element {
+height : 100px;
+}
+
+#dctm-url-input{
+  margin-top:10px;
+
+}
+#select-rqst-type{
+margin-left:25px;
+}
+
+#url-input{
+margin-left:10px;
+width :700px;
+}
+
+#send-request-btn{
+margin-left : 25px;
+line-height: 32px;
+}
+
+#rqst-head{
+margin-top : 10px;
+}
+
+#response{
+margin-top : 10px;
+}
+
+.dctm-input-field{
+width : 300px;
+margin-right : 20px;
+margin-top : 10px;
+}
+
+.dctm-card{
+ padding : 14px;
+}

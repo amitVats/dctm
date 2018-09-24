@@ -1,0 +1,193 @@
+<div >
+  <div  id= "dctm-url-input" class="container">
+    <mat-card class = "dctm-card">
+
+      <mat-card-content>
+        <div class="container">
+          <div class="row">
+
+            <form >
+              <mat-form-field id ="select-rqst-type">
+                <mat-select  placeholder="Request Type">
+                  <mat-option *ngFor="let requestType of request" [value]="requestType.value">
+                    {{requestType.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+
+              <mat-form-field id="url-input">
+                <input matInput placeholder="Request URL" value="">
+              </mat-form-field>
+
+              <button id="send-request-btn" mat-raised-button color="primary">SEND</button>
+
+            </form>
+          </div>
+        </div>
+
+      </mat-card-content>
+
+    </mat-card>
+
+  </div>
+  <div id="rqst-head" class="container">
+
+    <mat-card>
+      <mat-tab-group  >
+        <mat-tab label="Authorization">
+          <div id="rqst-auth" class="container">
+            <form>
+
+              <mat-form-field class = "dctm-input-field" appearance="outline">
+                <mat-label>User Name</mat-label>
+                <input matInput placeholder="User Name">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                 <mat-hint>Hint</mat-hint>-->
+              </mat-form-field>
+
+
+
+                <mat-form-field  class = "dctm-input-field"  appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput placeholder="Password">
+                  <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                   <mat-hint>Hint</mat-hint>-->
+                </mat-form-field>
+              <div></div>
+
+              <button mat-button>Clear</button>
+
+              <button mat-button>Update Request</button>
+
+
+
+
+            </form>
+
+          </div>
+
+        </mat-tab>
+        <mat-tab label="Headers">
+
+          <div id="rqst-header" class="container">
+            <form>
+
+              <mat-form-field class = "dctm-input-field" appearance="outline">
+                <mat-label>Authorization</mat-label>
+                <input matInput placeholder="Authorization">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                 <mat-hint>Hint</mat-hint>-->
+              </mat-form-field>
+
+
+
+              <mat-form-field  class = "dctm-input-field"  appearance="outline">
+                <mat-label>Content-Type</mat-label>
+                <input matInput placeholder="Content-Type">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                 <mat-hint>Hint</mat-hint>-->
+              </mat-form-field>
+
+              <mat-form-field class = "dctm-input-field" appearance="outline">
+                <mat-label>Accept</mat-label>
+                <input matInput placeholder="Accept">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                 <mat-hint>Hint</mat-hint>-->
+              </mat-form-field>
+
+
+            </form>
+
+          </div>
+
+
+        </mat-tab>
+        <mat-tab label="Body">
+
+          <div id="rqst-body" class="container">
+            <form>
+
+              <mat-form-field class="dtcm-textarea">
+                <textarea matInput placeholder="JSON data"></textarea>
+              </mat-form-field>
+
+              <input type="file" />
+
+
+            </form>
+
+          </div>
+
+
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </div>
+
+  <div id="response" class="container">
+
+    <mat-card>
+      <mat-card-header id="response-card-header">
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Response</mat-card-title>
+        <mat-card-subtitle>Response Code : 200</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content>
+        <mat-tab-group  >
+          <mat-tab label="Response Body">
+            <div id="response-body" >
+
+              <pre>
+                "tfhsvdjhsfljbfljsb
+                asd
+                asd
+                asd
+                ad
+                a
+                da
+                d
+                ad
+                a
+                d
+                ad
+                ad
+                a
+                d
+                ad
+                ad
+                a"
+              </pre>
+            </div>
+
+          </mat-tab>
+          <mat-tab label="Validation">
+
+            <div id="validation" class="container">
+
+
+            </div>
+
+
+          </mat-tab>
+
+        </mat-tab-group>
+        <p>
+          Validate Result here !!!!!
+        </p>
+
+
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" >Validate</button>
+
+      </mat-card-actions>
+
+
+    </mat-card>
+
+  </div>
+
+
+</div>

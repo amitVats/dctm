@@ -1,0 +1,169 @@
+<div class="homePage">
+  <mat-grid-list cols="4" rowHeight="80px">
+    <mat-grid-tile  colspan= "4" rowspan="1">
+      <mat-card class="request-card" >
+        <mat-card-content>
+          <div class="container">
+            <div class="row">
+              <div class="selector">
+                <select class="dropdown">
+                  <option value="GET">GET</option>
+                  <option value="POST">POST</option>
+                </select></div>
+
+              <div class="url-box"><input class="url-input"></div>
+
+              <div ><button type="button">SEND</button></div>
+            </div>
+          </div>
+        </mat-card-content>
+
+      </mat-card>
+
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+
+
+
+  <div class = "container">
+    <div class=" row">
+      <div class="col-xs-2 space"></div>
+      <div class="col-xs-8">
+
+        <mat-card class="request-card" >
+          <mat-card-content>
+            <div class="container ">
+              <div class="row">
+                <div class="col-xs-3 selector">
+                  <select class="dropdown">
+                    <option value="GET">GET</option>
+                    <option value="POST">POST</option>
+                  </select></div>
+
+                <div class="col-xs-6 url-box"><input class="url-input"></div>
+                <div class="col-xs-1 space"></div>
+                <div class="col-xs-2 "><button type="button">SEND</button></div>
+              </div>
+            </div>
+          </mat-card-content>
+
+        </mat-card>
+
+      </div>
+      <div class="col-xs-2 space"></div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 selector">
+        <select class="dropdown">
+        <option value="GET">GET</option>
+        <option value="POST">POST</option>
+      </select></div>
+
+      <div class="col-xs-6 url-box"><input class="url-input"></div>
+      <div class="col-xs-1 space"></div>
+      <div class="col-xs-2 "><button type="button">SEND</button></div>
+    </div>
+
+    <div class="row align">
+      <ngb-tabset>
+        <ngb-tab title="Header">
+          <ng-template ngbTabContent>
+
+            <table class="table">
+              <thead>
+              <tr>
+                <th></th>
+                <th>Key</th>
+                <th>Value</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td class="box"><input class="url-input" type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td class="box"><input type="text" class="url-input"></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td class="box"><input type="text" class="url-input"></td>
+              </tr>
+              </tbody>
+            </table>
+
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab>
+          <ng-template ngbTabTitle>Body</ng-template>
+          <ng-template ngbTabContent>
+            <table class="table">
+              <thead>
+              <tr>
+                <th></th>
+                <th>Key</th>
+                <th>Value</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td class="box"><input class="url-input" type="text"></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td><input type="text"></td>
+                <td class="box"><button type="button">Choose File</button>No file choosen</td>
+              </tr>
+              </tbody>
+            </table>
+          </ng-template>
+        </ngb-tab>
+
+      </ngb-tabset>
+    </div>
+
+    <div class="row align">
+      <ngb-tabset>
+        <ngb-tab title="Response">
+          <ng-template ngbTabContent>
+           <p></p>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab>
+          <ng-template ngbTabTitle>Validate</ng-template>
+          <ng-template ngbTabContent>
+
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
